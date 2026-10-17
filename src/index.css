@@ -1,14 +1,33 @@
 @import "tailwindcss";
 
-@theme {
-  --color-islamic-light: #F3F4F6;
-  --color-islamic: #16a34a;
-  --color-islamic-dark: #15803d;
-  --color-islamic-gold: #eab308;
+ :root {
+  --color-islamic: #10b981;
+  --color-islamic-gold: #f59e0b;
 }
 
-body {
-  background-color: #F9FAFB; /* Clean, soft background */
-  -webkit-tap-highlight-color: transparent; /* Removes blue tap box on mobile */
-  user-select: none; /* Prevents text highlighting when tapping fast */
+:root {
+  color-scheme: dark;
+}
+
+html, body, #root {
+  width: 100%;
+  min-height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background-color: #09090b !important; /* Pitch dark background across entire phone */
+  color: #f5f5f5;
+  overflow-x: hidden;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* iOS bottom home bar padding */
+.safe-pb {
+  padding-bottom: max(1rem, env(safe-area-inset-bottom));
+}
+
+/* iOS top notch padding */
+.safe-pt {
+  padding-top: max(0.75rem, env(safe-area-inset-top));
 }
