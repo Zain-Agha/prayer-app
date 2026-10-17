@@ -1,0 +1,14 @@
+@import "tailwindcss";
+
+@theme {
+  --color-islamic-light: #F3F4F6;
+  --color-islamic: #16a34a;
+  --color-islamic-dark: #15803d;
+  --color-islamic-gold: #eab308;
+}
+
+body {
+  background-color: #F9FAFB; /* Clean, soft background */
+  -webkit-tap-highlight-color: transparent; /* Removes blue tap box on mobile */
+  user-select: none; /* Prevents text highlighting when tapping fast */
+}
